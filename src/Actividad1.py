@@ -7,7 +7,7 @@ Introduzca un número: 4
 Introduzca un número: 5
 Introduzca un número: dato erróneo
 Entrada inválida
-# Introduzca un número: 7
+Introduzca un número: 7
 Introduzca un número: fin
 16 3 5.33333333333
 """
