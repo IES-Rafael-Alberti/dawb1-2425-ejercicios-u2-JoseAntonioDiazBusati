@@ -3,7 +3,7 @@ Para tributar un determinado impuesto se debe ser mayor de 16 años y tener unos
 a 1000 € mensuales. Escribir un programa que pregunte al usuario su edad y sus ingresos mensuales y
 muestre por pantalla si el usuario tiene que tributar o no.
 """
-from src.Condicionales.ej21_01 import comprobar_edad, introducir_edad
+from src.Condicionales.ej21_01 import comprobar_edad
 
 
 def preguntar_ingresos():
@@ -23,9 +23,7 @@ def comprobar_ingresos(ingreso: float)-> bool:
 
 def main():
     edad = comprobar_edad()
-    es_mayor(edad)
     ingreso = preguntar_ingresos()
-    comprobar_ingresos(ingreso)
     if comprobar_ingresos(ingreso) and es_mayor(edad) == True:
         print("\nPuedes tributar.")
     else:
