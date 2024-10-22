@@ -8,7 +8,7 @@ from src.Excepciones.ej23_02 import pedir_num
 
 def cuenta_atras(num: int):
     serie = ""
-    for i in range(0, num + 1):
+    for i in range(num ,0-1,-1):
         serie = serie + str(i) + ", "
     print(serie)
 
