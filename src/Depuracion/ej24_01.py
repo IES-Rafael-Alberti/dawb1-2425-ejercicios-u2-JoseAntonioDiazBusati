@@ -50,3 +50,17 @@ Práctica¶
 Ahora que ya sabemos como funciona el algoritmo de burbuja, pasemos a la práctica. Implementación en Python y utiliza el debugger
 para asegurarte que funciona adecuadamente y entiendes su funcionamiento.
 """
+a = [8, 3, 1, 19, 14]
+
+def bucle():
+    for i in range(0, len(a)):
+        for j in range(i, len(a)):
+            if a[i] > a[j]:
+                a[i], a[j] = a[j], a[i]
+    return a
+
+def main():
+    print(bucle())
+
+if __name__ == '__main__':
+    main()

@@ -22,9 +22,9 @@ def bucle(assist: bool, cont: int):
             assist = True
         elif num > -1:
             suma = suma_digitos(num)
-            print("La suma de los dígitos de",num,"es:",suma)
             if num % 2 == 0:
                 cont += 1
+            print("La suma de los dígitos de",num,"es:",suma)
         else:
             print("Introduce numeros positivos!!!")
 

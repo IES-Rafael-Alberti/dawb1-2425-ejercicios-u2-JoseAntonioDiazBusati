@@ -13,16 +13,14 @@ def pedir_letra(mensaje):
     return letra
 
 def buscar_coincidencia(frase,letra):
-    assist = False
-    while not assist:
-        for posicion, caracter in enumerate(frase):
-            if caracter == letra:
+    for posicion, caracter in enumerate(frase):
+        if caracter == letra:
                 print("Coincidencia encontrada en la posición",posicion)
-                assist = True
-            else:
-                print("No hay coincidencia en la posición",posicion)
+                exit()
         else:
-            print("No se encontró la letra en la frase.")
+                print("No hay coincidencia en la posición",posicion)
+    else:
+        print("No se encontró la letra en la frase.")
 
 def main():
     frase = pedir_frase("Introduce una frase: ")
