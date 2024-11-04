@@ -20,3 +20,28 @@ Libro: 20 años después
 Libro: *
 Fin. Se leyeron 2 líneas completas.
 """
+
+def contar_digitos(libros:str, contador:int):
+    for i in libros:
+        if i.isdigit():
+            contador+=1
+    return contador
+
+def pedir_libros(libros:str, contador:int):
+    total_libros = 0
+    while libros != "*":
+        libros = input("Libro: ")
+        if libros != "/":
+            digitos = contar_digitos(libros, contador)
+        elif libros == "/":
+            print(f"Linea completa. Aparecen {digitos} digitos numericos.")
+            total_libros +=1
+    return f"Fin. Se leyeron {total_libros} lineas completas."
+
+def main():
+    contador = 0
+    libros = ""
+    print(pedir_libros(libros,contador))
+
+if __name__ == '__main__':
+    main()
